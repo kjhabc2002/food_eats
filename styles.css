@@ -1,0 +1,6 @@
+@import "header.css";
+@import "status-bar.css";
+
+* {
+  box-sizing: border-box;
+}

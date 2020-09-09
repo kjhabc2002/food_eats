@@ -1,0 +1,12 @@
+.header {
+  /* flex : 해당클래스의 요소들을 가운데정렬시킴 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header .header__header-column {
+  display: flex;
+  align-items: center;
+}
