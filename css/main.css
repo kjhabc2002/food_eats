@@ -1,0 +1,24 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+
+.section-first {
+  /* background-color: #ecf0f1;
+  text-align: center;
+  /* block요소 : 한줄에 한개만 배치 
+  display: block;
+  width: 500px;
+  margin-left: 180px; */
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.section-third {
+  display: flex;
+
+  height: 200px;
+}

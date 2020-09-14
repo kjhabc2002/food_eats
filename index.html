@@ -1,0 +1,147 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/styles.css" rel="stylesheet" />
+    
+  </head>
+  <body>
+    
+    <header class="header">
+      <div class="header__header-column">
+        <h1 class="header__title"><i class="fas fa-utensils"></i>오늘머먹지</h1>
+      </div>
+      <div class="header__header-column">
+        <div class="header__address">상도동 xxx-xxx</div>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon">로그인</span>
+        <span class="header__icon">회원가입</span>
+      </div>
+    </header>
+    <main class="main">
+      <!--첫번째 배너 슬라이드 (쿠폰할인)-->
+      <section class="section section-first">
+        <!-- <div class="banner">
+          <ul class="banner__list">
+            <div class="banner__list-column">롯데리아 누구나 3000원 할인</div>
+            <div class="banner__list-column">파리바게뜨 누구나 6000원 할인</div>
+            <div class="banner__list-column">매드포갈릭 누구나 5000원 할인</div>
+          </ul>
+        </div> -->
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img class="slides_img" src="img/chicken.jpg" >
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img class="slides_img" src="img/kimchi.jpg" >
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img class="slides_img" src="img/snack.jpg">
+          </div>
+        </div>
+        <br />
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+      </section>
+      <script
+      src="https://kit.fontawesome.com/3e16430bfd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      </script>
+     <section class="section section-second">
+       <div class="items">
+         <div class="item">
+          <a href="korean_food.html">
+          <img class="item-img" src="img/kimchi.jpg" alt="" /></a>
+          <p>한식</p>
+         </div>
+          <div class="item">
+            <a href="chinese_food.html">
+              <img class="item-img" src="img/chinese.jpg" alt="" />
+              </a>
+           <p>중식</p>
+          </div>
+            <div class="item">
+              <a href="img/snackbar.html">
+                <img class="item-img" src="img/snack.jpg" alt="" /></a
+              >
+             <p>분식</p>
+            </div> 
+              <div class="item">
+                <a href="chicken.html">
+                  <img class="item-img" src="img/chicken.jpg" alt="" />
+                  </a>
+               <p>치킨</p>
+              </div> 
+                <div class="item">
+                  <a href="japanese">
+                    <img class="item-img" src="img/japanese.jpg" alt="" /></a>
+                 <p>스시/돈까스</p>
+                </div> 
+                  <div class="item">
+                    <a href="dessert">
+                      <img class="item-img" src="img/dessert.jpg" alt="" /></a>
+                   <p>분식</p>
+                  </div> 
+       </div>
+    
+      </section> 
+      <!-- <section class="section section-third">
+        <div class="hash">
+          <div class="hash__list">
+            <div class="hash__list-column">
+              <a href="hash_recommend1.html">#간단한 한끼</a>
+            </div>
+            <div class="hash__list-column">
+              <a href="hash_recommend1.html">#당충전</a>
+            </div>
+            <div class="hash__list-column">
+              <a href="hash_recommend1.html">#고기땡기네</a>
+            </div>
+          </div>
+          <nav class="hnav">
+            <ul class="hnav__list">
+              <li class="hnav__list-column"></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="dev">
+        <div class="dev_name">제작자 : 김주현</div>
+        <div class="dev_git">GIT : kjhabc2002@github.com</div>
+        <div class="copywrite">copywrite :</div>
+      </div>
+    </footer> -->
+  </body>
+</html>
