@@ -56,27 +56,7 @@
       src="https://kit.fontawesome.com/3e16430bfd.js"
       crossorigin="anonymous"
     ></script>
-    <script>
-      var slideIndex = 0;
-      showSlides();
-      
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}    
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
-      }
-      </script>
+
      <section class="section section-second">
        <div class="items">
          <div class="item">
@@ -143,5 +123,7 @@
         <div class="copywrite">copywrite :</div>
       </div>
     </footer> -->
+    <script src="script/jquery-3.5.1.min.js"></script>
+    <script src="script/custom.js"></script>
   </body>
 </html>
