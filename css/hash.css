@@ -1,0 +1,7 @@
+.hash__list {
+  display: flex;
+  flex-direction: row;
+}
+.hash__list-column {
+  padding: 20px;
+}

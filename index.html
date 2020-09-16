@@ -17,6 +17,11 @@
       <div class="header__header-column">
         <span class="header__icon">로그인</span>
         <span class="header__icon">회원가입</span>
+        <div class="header__header-badge">
+        <a href="" class="header__header-link">
+        <i class="fas fa-shopping-cart">(1)</i>
+        </div>
+        </a> 
       </div>
     </header>
     <main class="main">
@@ -29,28 +34,37 @@
             <div class="banner__list-column">매드포갈릭 누구나 5000원 할인</div>
           </ul>
         </div> -->
+        
         <div class="slideshow-container">
-          <div class="mySlides fade">
+          <input type="radio" name="tabmenu" id="tab1" checked>
+          <input type="radio" name="tabmenu" id="tab2">
+          <input type="radio" name="tabmenu" id="tab3">
+
+          <div class="mySlides slide1">
             <div class="numbertext">1 / 3</div>
             <img class="slides_img" src="img/chicken.jpg" >
           </div>
 
-          <div class="mySlides fade">
+          <div class="mySlides slide2">
             <div class="numbertext">2 / 3</div>
             <img class="slides_img" src="img/kimchi.jpg" >
           </div>
 
-          <div class="mySlides fade">
+          <div class="mySlides slide2">
             <div class="numbertext">3 / 3</div>
             <img class="slides_img" src="img/snack.jpg">
           </div>
         </div>
         <br />
-        <div style="text-align:center">
+        <div class="btn">
+          <label for="tab1"></label>
+          <label for="tab2"></label>
+          <label for="tab3"></label>
+          <!-- <span class="dot"></span> 
           <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-        </div>
+          <span class="dot"></span>  -->
+        </div> 
+    
       </section>
       <script
       src="https://kit.fontawesome.com/3e16430bfd.js"
@@ -95,7 +109,7 @@
        </div>
     
       </section> 
-      <!-- <section class="section section-third">
+     <section class="section section-third">
         <div class="hash">
           <div class="hash__list">
             <div class="hash__list-column">
@@ -122,8 +136,8 @@
         <div class="dev_git">GIT : kjhabc2002@github.com</div>
         <div class="copywrite">copywrite :</div>
       </div>
-    </footer> -->
-    <script src="script/jquery-3.5.1.min.js"></script>
-    <script src="script/custom.js"></script>
+    </footer> 
+    <!-- <script src="script/jquery-3.5.1.min.js"></script>
+    <script src="script/custom.js"></script> -->
   </body>
 </html>
