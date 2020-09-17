@@ -1,16 +1,10 @@
 .main {
-  margin-bottom: 30px;
-  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border: 1px solid brown;
 }
 
 .section-first {
-  /* background-color: #ecf0f1;
-  text-align: center;
-  /* block요소 : 한줄에 한개만 배치 
-  display: block;
-  width: 500px;
-  margin-left: 180px; */
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+  margin-top: 100px;
 }

@@ -3,7 +3,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/styles.css" rel="stylesheet" />
-    
+    <script src="script/jquery-3.5.1.min.js"></script>
+   
   </head>
   <body>
     
@@ -24,47 +25,31 @@
         </a> 
       </div>
     </header>
-    <main class="main">
-      <!--첫번째 배너 슬라이드 (쿠폰할인)-->
+     <main class="main">
+    <!--  첫번째 배너 슬라이드 (쿠폰할인)-->
       <section class="section section-first">
-        <!-- <div class="banner">
-          <ul class="banner__list">
-            <div class="banner__list-column">롯데리아 누구나 3000원 할인</div>
-            <div class="banner__list-column">파리바게뜨 누구나 6000원 할인</div>
-            <div class="banner__list-column">매드포갈릭 누구나 5000원 할인</div>
-          </ul>
-        </div> -->
-        
-        <div class="slideshow-container">
-          <input type="radio" name="tabmenu" id="tab1" checked>
-          <input type="radio" name="tabmenu" id="tab2">
-          <input type="radio" name="tabmenu" id="tab3">
-
-          <div class="mySlides slide1">
-            <div class="numbertext">1 / 3</div>
-            <img class="slides_img" src="img/chicken.jpg" >
+        <div class="tab-inner">   
+          <div class="content fade">
+            <a href="#none1"><img class="slides_img" src="img/chicken.jpg" ></a>
           </div>
 
-          <div class="mySlides slide2">
-            <div class="numbertext">2 / 3</div>
-            <img class="slides_img" src="img/kimchi.jpg" >
+          <div class="content fade">
+            <a href="#none2"><img class="slides_img" src="img/kimchi.jpg" ></a>
           </div>
 
-          <div class="mySlides slide2">
-            <div class="numbertext">3 / 3</div>
-            <img class="slides_img" src="img/snack.jpg">
+          <div class="content fade">
+            <a href="#none3"><img class="slides_img" src="img/snack.jpg"></a>
           </div>
-        </div>
-        <br />
-        <div class="btn">
-          <label for="tab1"></label>
-          <label for="tab2"></label>
-          <label for="tab3"></label>
-          <!-- <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span>  -->
-        </div> 
-    
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+    </div>
       </section>
       <script
       src="https://kit.fontawesome.com/3e16430bfd.js"
@@ -106,11 +91,11 @@
                       <img class="item-img" src="img/dessert.jpg" alt="" /></a>
                    <p>분식</p>
                   </div> 
-       </div>
-    
+
+       </div>  
       </section> 
      <section class="section section-third">
-        <div class="hash">
+        <!-- <div class="hash">
           <div class="hash__list">
             <div class="hash__list-column">
               <a href="hash_recommend1.html">#간단한 한끼</a>
@@ -121,23 +106,29 @@
             <div class="hash__list-column">
               <a href="hash_recommend1.html">#고기땡기네</a>
             </div>
+          </div> -->
+          <div class="tab-inner">
+          <ul class="btn">
+            <li data-alt="tab1" class="active">#간단한 한끼</li>
+            <li data-alt="tab2">#당충전</li>
+            <li data-alt="tab3">#고기땡기네</li>
+          </ul>
+          <div class="tabs">
+            <div id="tab1" class="active">tab1</div>
+            <div id="tab2">tab2</div>
+            <div id="tab3">tab3</div>
           </div>
-          <nav class="hnav">
-            <ul class="hnav__list">
-              <li class="hnav__list-column"></li>
-            </ul>
-          </nav>
         </div>
       </section>
-    </main>
-    <footer>
-      <div class="dev">
-        <div class="dev_name">제작자 : 김주현</div>
-        <div class="dev_git">GIT : kjhabc2002@github.com</div>
-        <div class="copywrite">copywrite :</div>
-      </div>
-    </footer> 
-    <!-- <script src="script/jquery-3.5.1.min.js"></script>
-    <script src="script/custom.js"></script> -->
+      
+      <footer>
+        <div class="dev">
+          <div class="dev_name">제작자 : 김주현</div>
+          <div class="dev_git">GIT : kjhabc2002@github.com</div>
+          <div class="copywrite">copywrite :</div>
+        </div>
+      </footer>
+    </main> -->
+    <script src="script/custom.js"></script> 
   </body>
 </html>

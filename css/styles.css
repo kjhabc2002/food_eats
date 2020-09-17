@@ -1,5 +1,4 @@
 @import "header.css";
-@import "section.css";
 @import "nav.css";
 @import "main.css";
 @import "banner.css";
@@ -12,12 +11,17 @@
 }
 
 body {
-  margin: 0%;
+  position: relative;
+  margin: 0;
   color: #020202;
-  padding: 10px 20px;
+  padding: 10px 30px;
   font-family: "Noto Sans KR", sans-serif;
 }
 
 i {
   padding: 6px 9px;
+}
+footer {
+  bottom: 500px;
+  padding: 100px;
 }
