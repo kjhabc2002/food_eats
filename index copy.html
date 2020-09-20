@@ -1,0 +1,130 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="script/jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="innerHeader">
+        <h1 class="logo"><a href="index.html"><i class="fas fa-utensils"></i>오늘 뭐먹지?</h1></a>
+        <nav class="mainMenu">
+          <span class="bar"></span>
+          <ul class="address">
+            <li><a href="#">주소등록</a></li>
+          </ul>
+          <ul class="gnb en">
+           
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li>
+              <a href="#"><i class="fas fa-shopping-cart">(1)</i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- <div class="header__header-column">
+        <h1 class="header__title">오늘머먹지</h1>
+      </div>
+      <div class="header__header-column">
+        
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon">로그인</span>
+        <span class="header__icon">회원가입</span> -->
+      <!-- <div class="header__header-badge">
+        <a href="" class="header__header-link">
+        <i class="fas fa-shopping-cart">(1)</i>
+        </div>
+        </a> 
+      </div> -->
+    </header>
+    <main class="main">
+      <!--  첫번째 배너 슬라이드 (쿠폰할인)-->
+      <section class="section section-first"></section>
+      <script
+        src="https://kit.fontawesome.com/3e16430bfd.js"
+        crossorigin="anonymous"
+      ></script>
+
+      <section class="section section-second">
+        <div class="items">
+          <div class="item">
+            <a href="korean_food.html">
+              <img class="item-img" src="img/kimchi.jpg" alt=""
+            /></a>
+            <p>한식</p>
+          </div>
+          <div class="item">
+            <a href="chinese_food.html">
+              <img class="item-img" src="img/chinese.jpg" alt="" />
+            </a>
+            <p>중식</p>
+          </div>
+          <div class="item">
+            <a href="img/snackbar.html">
+              <img class="item-img" src="img/snack.jpg" alt=""
+            /></a>
+            <p>분식</p>
+          </div>
+          <div class="item">
+            <a href="chicken.html">
+              <img class="item-img" src="img/chicken.jpg" alt="" />
+            </a>
+            <p>치킨</p>
+          </div>
+          <div class="item">
+            <a href="japanese">
+              <img class="item-img" src="img/japanese.jpg" alt=""
+            /></a>
+            <p>스시/돈까스</p>
+          </div>
+          <div class="item">
+            <a href="dessert">
+              <img class="item-img" src="img/dessert.jpg" alt=""
+            /></a>
+            <p>분식</p>
+          </div>
+        </div>
+      </section>
+      <section class="section section-third">
+        <!-- <div class="hash">
+          <div class="hash__list">
+            <div class="hash__list-column">
+              <a href="hash_recommend1.html">#간단한 한끼</a>
+            </div>
+            <div class="hash__list-column">
+              <a href="hash_recommend1.html">#당충전</a>
+            </div>
+            <div class="hash__list-column">
+              <a href="hash_recommend1.html">#고기땡기네</a>
+            </div>
+          </div> -->
+        <div class="tab-inner">
+          <ul class="btn">
+            <li data-alt="tab1" class="active">#간단한 한끼</li>
+            <li data-alt="tab2">#당충전</li>
+            <li data-alt="tab3">#고기땡기네</li>
+          </ul>
+          <div class="tabs">
+            <div id="tab1" class="active">tab1</div>
+            <div id="tab2">tab2</div>
+            <div id="tab3">tab3</div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="dev">
+          <div class="dev_name">제작자 : 김주현</div>
+          <div class="dev_git">GIT : kjhabc2002@github.com</div>
+          <div class="copywrite">copywrite :</div>
+        </div>
+      </footer>
+    </main>
+    <script src="script/custom.js"></script>
+  </body>
+</html>
