@@ -1,0 +1,46 @@
+/* footer */
+footer {
+  width: 1350px;
+  margin: auto;
+}
+
+footer .top .tit {
+  font-size: 52px;
+  text-align: center;
+  color: #e6e6e6;
+  margin-bottom: 40px;
+}
+footer .bottom {
+  border-top: 1px solid #e6e6e6;
+  padding: 40px 0 100px;
+}
+footer .bottom ul {
+  overflow: hidden;
+}
+/* 자식요소에 float줄 경우 부모요소에 hidden을 주어야한다. */
+footer .bottom ul li {
+  float: left;
+  width: 23%;
+  color: #aaa;
+  font-size: 12px;
+  line-height: 2em;
+}
+/* nth-child(1):첫번째 자식 */
+footer .bottom ul li:nth-child(1) {
+  width: 31%;
+  font-size: 20px;
+  color: #000;
+  line-height: 1.2;
+}
+
+footer .bottom ul li b {
+  color: #333;
+  font-weight: normal;
+}
+
+footer .bottom ul li b:nth-child(1) {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #333;
+}

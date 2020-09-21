@@ -1,3 +1,53 @@
-.section-first {
-  margin-top: 100px;
+/* section.visual */
+section.visual {
+  max-width: 1720px;
+  margin: auto;
+  overflow: hidden;
+}
+
+section.visual .mainImg {
+  float: left;
+  width: 50%;
+}
+
+section.visual .mainImg img {
+  height: 80%;
+  width: 98%;
+}
+section.visual .mainTxt {
+  float: left;
+  width: 50%;
+  margin-top: 120px;
+}
+section.visual .mainTxt .txt {
+  padding: 40px 0px 0px 40px;
+}
+
+section.visual .mainTxt .tit {
+  font-size: 52px;
+}
+section.visual .mainTxt .tit span.en_s {
+  margin-bottom: 10px;
+}
+section.visual .mainTxt .tit span b {
+  margin-bottom: 10px;
+}
+
+.txt span.sub {
+  color: #888;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.txt p {
+  color: #888;
+  font-weight: normal;
+}
+
+/* SVG 애니메이션 */
+/* 클래스에 data-animate를 걸게되면 자동으로 animate가 붙기 때문에 .tit.motion으로 적는다. */
+.tit.motion span {
+  color: red;
+  border: 1px solid red;
 }

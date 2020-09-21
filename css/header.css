@@ -1,28 +1,3 @@
-/*반응형웹제작*/
-
-/*pc모드*/
-@media screen and (max-width: 1720px) {
-  /*1720px~1401px사이*/
-  .innerHeader {
-    max-width: 100%;
-    padding: 0 30px;
-    box-sizing: border-box;
-  }
-  .innerHeader .mainMenu .sns {
-    margin-left: 200px;
-  }
-  section.visual {
-    max-width: 100%;
-    padding: 0 30px;
-    box-sizing: border-box;
-  }
-  section.visual .mainTxt {
-    margin-top: 150px;
-  }
-  section.visual .mainTxt .tit {
-    font-size: 62px;
-  }
-}
 /* header */
 .innerHeader {
   max-width: 1720px;
@@ -41,16 +16,19 @@
   height: 100%;
 }
 /* group + login */
-innerHeader .mainMenu {
+.innerHeader .mainMenu {
   float: right;
   overflow: hidden;
   position: relative;
+}
+nav {
+  display: block;
 }
 
 span.bar {
   position: absolute;
   left: 0;
-  bottom: 200px;
+  top: 70px;
   width: 0;
   height: 3px;
   background-color: #e7e7e7;
