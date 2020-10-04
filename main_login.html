@@ -1,78 +1,59 @@
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-    src="https://kit.fontawesome.com/3e16430bfd.js"
-    crossorigin="anonymous"
-  ></script>
-    <!-- css -->
-    <link href="css/styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!-- script -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/scrolla.jquery.min.js"></script>
-    <script src="js/script_main.js"></script>
-    <script
-    src="https://kit.fontawesome.com/3e16430bfd.js"
-    crossorigin="anonymous"
-  ></script>
-  </head>
-  <body>
-    <div class="menuOpen">
-      <button class="open"><img src="img/open-icon.png" alt="메뉴열기" alt=""></button>
-      <div class="menuWrap">
-        <a href="#" class="close"><img src="img/close.png" alt=""></a>
-        <a href="#" class="close en">close</a>
-      <ul class="tit en animate" data-animate="motion">
-        <li><a href="#"><span><b>로그아웃</b></span></a></li>
-        <li><a href="#"><span><b>마이페이지</b></span></a></li>
-        <li><a href="#"><span><b>카트</b></span></a></li>
-        <li><a href="#"><span><b>주소등록</b></span></a></li>
-      </ul>
-      </div>
-    </div>
-    <!-- header -->
-    <header class="header">
-      <div class="innerHeader">
-        <h1 class="logo"><a href="index.html"><i class="fas fa-utensils"></i>오늘 뭐먹지?</h1></a>
-        <nav class="mainMenu">
-          <span class="bar"></span>
-          <ul class="address">
-            <li><a href="#">주소등록</a></li>
-            
-          </ul>
-          <ul class="gnb en">
-            <li><a href="#">로그아웃</a></li>
-            <li><a href="#">마이페이지</a></li>
-            <li>
-              <a href="#"><i class="fas fa-shopping-cart">(1)</i></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main class="main">
-      <!--  소개페이지-->
-      <!-- <section class="visual">
-        <div class="mainImg"><p class="img"><img src="img/chicken_bg.jpg" alt=""></p></div>
-        <div class="mainTxt">
-          <h2 class="tit en animate" data-animate="motion">
-            <span class="en_s"><b>what do you want to eat?</b><span><br>
-            <span><b>오늘 뭐먹지?</b></span>
-          </h2>
-          
-          <div class="txt">
-            <span class="sub">"원하는 음식을 바로바로 배달시키자"</span>
-            <p>
-              오늘 뭐먹지?는 새로운 할인과 좋은 음식을 먹고싶은 곳에서 주문 수 있는 배달사이트입니다.<br>
-  현재 내위치를 등록하여 배달가능한 위치의 배달업소를 찾을 수 있습니다. <br>
-  먹고싶은 메뉴가 있는 배달업소의 리뷰를 읽고 고객평점을 비교할 수 있습니다.<br>
-  매일매일 새로운 쿠폰을 다운받아서 할인받을 수 있습니다.
-</p>
-</div>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script
+      src="https://kit.fontawesome.com/3e16430bfd.js"
+      crossorigin="anonymous"
+    ></script>
+      <!-- css -->
+      <link href="css/styles.css" rel="stylesheet" />
+      <!-- script -->
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/scrolla.jquery.min.js"></script>
+      <script src="js/script_main.js"></script>
+      <script
+      src="https://kit.fontawesome.com/3e16430bfd.js"
+      crossorigin="anonymous"
+    ></script>
+    </head>
+    <body>
+      <div class="menuOpen">
+        <button class="open"><img src="img/open-icon.png" alt="메뉴열기" alt=""></button>
+        <div class="menuWrap">
+          <a href="#" class="close"><img src="img/close.png" alt=""></a>
+          <a href="#" class="close en">close</a>
+        <ul class="tit en animate" data-animate="motion">
+          <li><a href="#"><span><b>로그인</b></span></a></li>
+          <li><a href="#"><span><b>회원가입</b></span></a></li>
+          <li><a href="#"><span><b>장바구니</b></span></a></li>
+          <li><a href="#"><span><b>주소등록</b></span></a></li>
+        </ul>
         </div>
-      </section> -->
+      </div>
+      <!-- header -->
+      <header class="header">
+        <div class="innerHeader">
+          <h1 class="logo"><a href="index.html"><i class="fas fa-utensils"></i>오늘 뭐먹지?</h1></a>
+          <nav class="mainMenu">
+            <span class="bar"></span>
+            <ul class="address">
+              <li><a href="#">주소등록</a></li>
+              
+            </ul>
+            <ul class="gnb en">
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+              <li>
+                <a href="#"><i class="fas fa-shopping-cart">(1)</i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <main class="main">
+    
 <!-- 쿠폰할인 슬라이더 -->
       <section class="coupon">
   <div class="tab-inner">
@@ -80,13 +61,13 @@
     <input type="radio" name="tabmenu" id="tab2">
     <input type="radio" name="tabmenu" id="tab3">
   <div class="content slide1">
-    <img src="img/coupon2.jpg" alt="">
+    <a href="#none1"><img src="img/coupon2.jpg" alt=""></a>
   </div>
   <div class="content slide2">
-    <img src="img/coupon1.jpg" alt="">
+    <a href="#none2"><img src="img/coupon1.jpg" alt=""></a>
   </div>
   <div class="content slide3">
-    <img src="img/coupon2.jpg" alt="">
+    <a href="#none3"><img src="img/coupon2.jpg" alt=""></a>
   </div>
   <div class="btn">
     <label for="tab1"></label>
@@ -95,6 +76,50 @@
   </div>
   </div>
 </section>
+<!-- 메뉴선택 슬라이드 -->
+<section class="foodOpen">
+<div class="foodList">
+    <div class="item">
+      <a href="korean_food.html">
+        <img class="item-img" src="img/kimchi.jpg" alt=""
+      /></a>
+      <p>한식</p>
+    </div>
+    <div class="item">
+      <a href="chinese_food.html">
+        <img class="item-img" src="img/chinese.jpg" alt="" />
+      </a>
+      <p>중식</p>
+    </div>
+    <div class="item">
+      <a href="img/snackbar.html">
+        <img class="item-img" src="img/snack.jpg" alt=""
+      /></a>
+      <p>분식</p>
+    </div>
+    <div class="item">
+      <a href="chicken.html">
+        <img class="item-img" src="img/chicken.jpg" alt="" />
+      </a>
+      <p>치킨</p>
+    </div>
+    <div class="item">
+      <a href="japanese">
+        <img class="item-img" src="img/japanese.jpg" alt=""
+      /></a>
+      <p>스시/돈까스</p>
+    </div>
+    <div class="item">
+      <a href="dessert">
+        <img class="item-img" src="img/dessert.jpg" alt=""
+      /></a>
+      <p>분식</p>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+</section>
+
       <footer>
         <div class="top">
           <h2 class="tit en animate" data-animate="motion">

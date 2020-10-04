@@ -44,10 +44,17 @@ section.visual .mainTxt .tit span b {
   color: #888;
   font-weight: normal;
 }
-/* slider_coupon */
+
+/* 로그인 후에 slider_coupon */
+section.coupon {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 40px;
+}
 .tab-inner {
   border: 1px solid red;
-  width: 100%;
+  width: 90%;
   height: 350px;
   position: relative;
 }
@@ -55,7 +62,13 @@ input[name="tabmenu"] {
   display: none;
 }
 .content {
-  display: none;
+  /* display: none; */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
 }
 .btn {
   position: absolute;
@@ -65,36 +78,72 @@ input[name="tabmenu"] {
 }
 .btn label {
   background-color: lightgray;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   display: inline-block;
   border-radius: 50%;
   cursor: pointer;
 }
-
-input[id="tab1"]:checked ~ .slide1 {
-  display: block;
+section.coupon .tab-inner .content img {
+  height: 100%;
+  width: 100%;
 }
-input[id="tab2"]:checked ~ .slide2 {
-  display: block;
-}
+input[id="tab1"]:checked ~ .slide1,
+input[id="tab2"]:checked ~ .slide2,
 input[id="tab3"]:checked ~ .slide3 {
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
-input[id="tab1"]:checked ~ .btn label[for="tab1"] {
-  background-color: crimson;
-}
-
-input[id="tab2"]:checked ~ .btn label[for="tab2"] {
-  background-color: crimson;
-}
-
+input[id="tab1"]:checked ~ .btn label[for="tab1"],
+input[id="tab2"]:checked ~ .btn label[for="tab2"],
 input[id="tab3"]:checked ~ .btn label[for="tab3"] {
   background-color: crimson;
 }
 
-.content img {
-  height: 300px;
-  width: 1000px;
+/* 로그인후 메뉴선택 슬라이드 */
+section.foodOpen {
+  position: relative;
+}
+/* 로그인후 메뉴선택 슬라이드 - 다음,이전 버튼  */
+.prev,
+.next {
+
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  padding : 3px 0 0 
+  margin-top: -22px;
+  color: lightgray;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 50;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+  left:50;
+  border-radius: 3px 0 0 3px;
+}
+section.foodOpen .foodList {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 50px;
+}
+section.foodOpen .foodList .item .item-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+section.foodOpen .foodList .item {
+  text-align: center;
+  padding: 20px 20px;
 }

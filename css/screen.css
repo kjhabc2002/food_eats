@@ -30,6 +30,10 @@
     height: 70%;
     width: 98%;
   }
+  section.coupon .tab-inner .content img {
+    height: 100%;
+    width: 120%;
+  }
   footer {
     width: 100%;
     padding: 0 30px;
@@ -60,6 +64,11 @@
     height: 70%;
     width: 98%;
   }
+  section.coupon .tab-inner .content img {
+    height: 100%;
+    width: 100%;
+  }
+
   footer {
     width: 100%;
     padding: 0 30px;
@@ -98,5 +107,9 @@
     width: 100%;
     float: none;
     margin-top: 50px;
+  }
+  section.coupon .tab-inner .content img {
+    height: 100%;
+    width: 100%;
   }
 }
