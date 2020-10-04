@@ -28,3 +28,22 @@ $(function () {
     $("span.bar").css({ left: 0, width: 0, opacity: 0 });
   });
 });
+// 2.햄버거 메뉴
+$(function () {
+  $(".menuOpen button.open").on("click", function () {
+    $(".menuOpen .menuWrap").addClass("on");
+  });
+  $(".menuOpen .menuWrap .close").on("click", function () {
+    $(".menuOpen .menuWrap").removeClass("on");
+  });
+});
+
+// 3.스크롤애니메이션
+$(function () {
+  $(".animate").scrolla({
+    mobile: true, //모바일 버전시 활성화
+    once: true, // 스크롤시 딱 한번만 하고 싶을땐 true
+  });
+});
+
+//4. 쿠폰 탭 슬라이드

@@ -1,0 +1,102 @@
+/* 반응형 웹제작 */
+/* PC모드 */
+@media screen and (max-width: 1720px) {
+  /*1400px ~ 1720px  */
+  .innerHeader {
+    max-width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+  .innerHeader .mainMenu .gnb {
+    margin-left: 200px;
+  }
+  .innerHeader .mainMenu .address {
+    margin-left: 260px;
+  }
+  section.visual .mainTxt {
+    margin-top: 100px;
+  }
+
+  section.visual .mainTxt .tit {
+    font-size: 3.3vw;
+    display: inline-block;
+  }
+  section.visual {
+    max-width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+  section.visual .mainImg img {
+    height: 70%;
+    width: 98%;
+  }
+  footer {
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+}
+
+/* 1024 테블릿모드 */
+@media screen and (max-width: 1400px) {
+  /* 1024~1400 사이 */
+
+  .innerHeader .mainMenu .gnb {
+    margin-left: 180px;
+  }
+  .innerHeader .mainMenu .address {
+    margin-left: 160px;
+  }
+  section .visual .mainTxt {
+    margin-top: 100px;
+  }
+  section .visual .mainTxt .tit {
+    font-size: 3vw;
+  }
+  section.visual .mainTxt .txt {
+    padding: 30px 0px 0px 30px;
+  }
+  section.visual .mainImg img {
+    height: 70%;
+    width: 98%;
+  }
+  footer {
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+}
+/*1024 이하 테블렛*/
+@media screen and (max-width: 1000px) {
+  .innerHeader {
+    height: 80px;
+    line-height: 80px;
+  }
+  .innerHeader .mainMenu {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    display: none;
+  }
+  section.visual .mainImg {
+    width: 100%;
+    float: none;
+  }
+  section.visual .mainImg img {
+    width: 98%;
+  }
+  section .visual .mainTxt .tit {
+    font-size: 35px;
+  }
+  section.visual .mainTxt .txt {
+    padding: 30px 0px 0px 30px;
+  }
+  section .visual .mainTxt {
+    margin-top: 10px;
+  }
+  section.visual .mainTxt {
+    width: 100%;
+    float: none;
+    margin-top: 50px;
+  }
+}
